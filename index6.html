@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height:450px ;
+            border: 2px solid;
+            border-radius: 10px;
+            background-color: rgb(32, 55, 55);
+        }
+        .a{
+            position: relative;
+            top: 140px;
+            left: 70px;
+        }
+        .b{
+            position: relative;
+            top: 150px;
+            left: 60px;
+            border-radius: 2px;
+        }
+        .c{
+            position: relative;
+            top: 160px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="./index2.html" method="post">
+        <label class="a" for="abc">verify your password</label><br>
+        <input class="b" type="text" id="abc" pattern="[0-9]{7,8}" required title="password is incorrect" placeholder="enter password"><br>
+        <input class="c" type="submit">
+    </div>
+</body>
+</html>
